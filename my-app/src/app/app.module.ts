@@ -3,15 +3,21 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
-import { HeroesComponent } from "./heroes/heroes.component";
-import { HeroDetailComponent } from "./hero-detail/hero-detail.component";
-import { CheckboxComponent } from './checkbox/checkbox.component';
-import { ImageComponent } from './image/image.component';
-import { ButtonComponent } from './button/button.component';
-import { HintComponent } from './hint/hint.component';
+import { CheckboxComponent } from "./checkbox/checkbox.component";
+import { ImageComponent } from "./image/image.component";
+import { ButtonComponent } from "./button/button.component";
+import { HintComponent } from "./hint/hint.component";
+import { ScoreComponent } from './score/score.component';
 
 @NgModule({
-  declarations: [AppComponent, HeroesComponent, HeroDetailComponent, CheckboxComponent, ImageComponent, ButtonComponent, HintComponent],
+  declarations: [
+    AppComponent,
+    CheckboxComponent,
+    ImageComponent,
+    ButtonComponent,
+    HintComponent,
+    ScoreComponent
+  ],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
