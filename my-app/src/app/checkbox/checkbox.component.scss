@@ -1,0 +1,40 @@
+input[type=radio]+label {
+  color: #982682;
+  padding: 0.5em;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  height: 1.3em;
+  background-color: #FEDF5C;
+  border-radius: 0.625em;
+}
+
+input[type=radio]:checked+label {
+  background-color: #FEDF5C;
+  border-radius: 0.625em;
+  color: #2b4040;
+  padding: 0.5em;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  height: 1.3em;
+}
+
+input[type=radio]:hover+label {
+  background: rgba(239, 192, 48, 0.4);
+  border-radius: 0.625em;
+  color: #2b4040;
+  padding: 0.5em;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  height: 1.3em;
+
+}
+
+input[type=radio]:focus+label::before {
+  background: rgba(239, 192, 48, 0.4);
+  border-radius: 0.625em;
+  color: #2b4040;
+  padding: 0.5em;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  height: 1.3em;
+}
