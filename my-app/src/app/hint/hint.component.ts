@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-hint',
-  templateUrl: './hint.component.html',
-  styleUrls: ['./hint.component.scss']
+  selector: "app-hint",
+  templateUrl: "./hint.component.html",
+  styleUrls: ["./hint.component.scss"]
 })
 export class HintComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

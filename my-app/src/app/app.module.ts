@@ -7,7 +7,8 @@ import { CheckboxComponent } from "./checkbox/checkbox.component";
 import { ImageComponent } from "./image/image.component";
 import { ButtonComponent } from "./button/button.component";
 import { HintComponent } from "./hint/hint.component";
-import { ScoreComponent } from './score/score.component';
+import { ScoreComponent } from "./score/score.component";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { ScoreComponent } from './score/score.component';
     HintComponent,
     ScoreComponent
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
 })
