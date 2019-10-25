@@ -1,14 +1,14 @@
 <h1>Musea quiz</h1>
 <div class="container">
 <app-score></app-score>
-<app-checkbox></app-checkbox>
+<app-checkbox (checked)="onChecked($event)" ></app-checkbox>
 </div>
 <div class="container">
-<app-image></app-image>
+<app-image [src]="srcImage"></app-image>
 <app-button></app-button>
 </div>
 <div class="container">
-<app-hint></app-hint>
+<app-hint [title-var]='title'></app-hint>
 </div>
 
 
