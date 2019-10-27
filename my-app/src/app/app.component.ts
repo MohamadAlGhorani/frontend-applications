@@ -25,6 +25,21 @@ export class AppComponent {
     this.hintAantal = this.hintAantal - 1;
   }
   onChecked(value: String) {
+    if (this.herkomst == "Afrika") {
+      this.herkomst = "Geografische herkomst";
+    }
+    if (this.herkomst == "Zuid- en Zuidoost-Azië") {
+      this.herkomst = "India";
+    }
+    if (this.herkomst == "Zuid-Azië") {
+      this.herkomst = "India";
+    }
+    if (this.herkomst == "Azië") {
+      this.herkomst = "India";
+    }
+    if (this.herkomst == "Zuidoost-Azië: Insulair") {
+      this.herkomst = "Indonesië";
+    }
     if (value == this.herkomst) {
       this.score = this.score + 1;
       alert("score omhoog goed gedaan");
