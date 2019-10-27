@@ -5,11 +5,12 @@ import { Component, OnInit, Input } from "@angular/core";
   templateUrl: "./hint.component.html",
   styleUrls: ["./hint.component.scss"],
   template: `
-    <p>{{ title }}</p>
+    <p class="{{ hintClassName }}">{{ title }}</p>
   `
 })
 export class HintComponent implements OnInit {
   @Input("title-var") title: string;
+  @Input("hintClassName-var") hintClassName: string;
   constructor() {}
 
   ngOnInit() {}
