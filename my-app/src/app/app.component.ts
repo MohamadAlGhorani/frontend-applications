@@ -31,6 +31,9 @@ export class AppComponent {
       }, 500);
     }
   }
+  addingClassName(value: String) {
+    console.log("adding class name");
+  }
   constructor(private http: HttpClient) {
     var allData = [];
     this.http.get(this.url1).subscribe(response1 => {
@@ -56,13 +59,12 @@ export class AppComponent {
         allData[randomGebied].results.bindings.length
       );
       console.log(
-        "randomGebied",
+        "randomObject",
         allData[randomGebied].results.bindings[randomObject]
       );
-      console.log("srcImage 1", this.srcImage);
       this.srcImage =
         allData[randomGebied].results.bindings[randomObject].link.value;
-      console.log("srcImage 2", this.srcImage);
+      console.log("srcImage", this.srcImage);
       this.herkomst =
         allData[randomGebied].results.bindings[randomObject].placeName.value;
       console.log("herkomst", this.herkomst);

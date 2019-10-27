@@ -15,6 +15,6 @@ export class ImageComponent implements OnInit {
   }
   ngOnInit() {
     var el = this.element.nativeElement;
-    console.log(el);
+    // console.log(el);
   }
 }
