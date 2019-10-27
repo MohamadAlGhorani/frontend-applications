@@ -15,6 +15,8 @@ export class AppComponent {
     "https://wpamelia.com/wp-content/uploads/2018/11/ezgif-2-6d0b072c3d3f.gif";
   srcImage = this.loading;
   herkomst = "";
+  hintClassName = "";
+  hintAantal = 10;
   title = "";
   score = 0;
   onChecked(value: String) {
@@ -33,6 +35,8 @@ export class AppComponent {
   }
   addingClassName(value: String) {
     console.log("adding class name");
+    this.hintClassName = "has-display-block";
+    this.hintAantal = this.hintAantal - 1;
   }
   constructor(private http: HttpClient) {
     var allData = [];

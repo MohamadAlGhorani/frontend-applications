@@ -7,7 +7,7 @@
     <app-image [src]="srcImage"></app-image>
 </div>
 <div class="container">
-     <app-button (addedClassName)="addingClassName($event)" ></app-button>
+     <app-button [hint-var]='hintAantal' (addedClassName)="addingClassName($event)" ></app-button>
     <app-hint [title-var]='title'></app-hint>
 </div>
 
