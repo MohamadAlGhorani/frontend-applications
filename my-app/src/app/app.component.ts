@@ -19,6 +19,11 @@ export class AppComponent {
   hintAantal = 10;
   title = "";
   score = 0;
+  addingClassName(value: String) {
+    console.log("adding class name");
+    this.hintClassName = "has-display-block";
+    this.hintAantal = this.hintAantal - 1;
+  }
   onChecked(value: String) {
     if (value == this.herkomst) {
       this.score = this.score + 1;
@@ -32,11 +37,6 @@ export class AppComponent {
         alert("opnieuw");
       }, 500);
     }
-  }
-  addingClassName(value: String) {
-    console.log("adding class name");
-    this.hintClassName = "has-display-block";
-    this.hintAantal = this.hintAantal - 1;
   }
   constructor(private http: HttpClient) {
     var allData = [];
