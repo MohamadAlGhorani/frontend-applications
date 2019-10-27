@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from "@angular/core";
   templateUrl: "./hint.component.html",
   styleUrls: ["./hint.component.scss"],
   template: `
-    <p class="{{ hintClassName }}">{{ title }}</p>
+    <p class=" hint {{ hintClassName }}">{{ title }}</p>
   `
 })
 export class HintComponent implements OnInit {
