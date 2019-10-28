@@ -20,6 +20,7 @@ export class AppComponent {
   hintClassName = "";
   answerClassName = "";
   hintAantal = 10;
+  buttonLabel = "Hints";
   title = "";
   thema = "";
   score = 0;
@@ -29,13 +30,19 @@ export class AppComponent {
   randomGebied = "";
   addingClassName(value: String) {
     console.log("adding class name");
-    if (this.hintAantal > 0 && this.hint == true) {
+    if (this.hintAantal > 1 && this.hint == true) {
       this.hintClassName = "has-display-block";
       this.hintAantal = this.hintAantal - 1;
+      this.buttonLabel = "Hints";
       this.hint = false;
-    } else if (this.hintAantal <= 0) {
+    } else if (this.hintAantal <= 0 && this.hint == true) {
       this.hintClassName = "";
+      this.buttonLabel = "Hints";
       this.hintAantal = 0;
+      this.hint = false;
+    }
+    if (this.hintAantal == 1) {
+      this.buttonLabel = "Hint";
     }
   }
   onChecked(value: String) {
