@@ -1,5 +1,8 @@
 <h1>Musea quiz</h1>
 <div class="container">
+    <app-thema [thema-var]='thema'></app-thema>
+</div>
+<div class="container">
     <app-score [score-var]='score'></app-score>
     <app-checkbox (checked)="onChecked($event)" ></app-checkbox>
 </div>

@@ -9,6 +9,7 @@ import { ButtonComponent } from "./button/button.component";
 import { HintComponent } from "./hint/hint.component";
 import { ScoreComponent } from "./score/score.component";
 import { HttpClientModule } from "@angular/common/http";
+import { ThemaComponent } from './thema/thema.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from "@angular/common/http";
     ImageComponent,
     ButtonComponent,
     HintComponent,
-    ScoreComponent
+    ScoreComponent,
+    ThemaComponent
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
