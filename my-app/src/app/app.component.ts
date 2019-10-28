@@ -21,14 +21,16 @@ export class AppComponent {
   hintAantal = 10;
   title = "";
   score = 0;
+  hint = true;
   allData = [];
   randomObject = "";
   randomGebied = "";
   addingClassName(value: String) {
     console.log("adding class name");
-    if (this.hintAantal > 0) {
+    if (this.hintAantal > 0 && this.hint == true) {
       this.hintClassName = "has-display-block";
       this.hintAantal = this.hintAantal - 1;
+      this.hint = false;
     } else if (this.hintAantal <= 0) {
       this.hintClassName = "";
       this.hintAantal = 0;
@@ -40,6 +42,7 @@ export class AppComponent {
       this.srcImage = this.loading;
       this.hintClassName = "has-display-block";
       setTimeout(() => {
+        this.hint = true;
         this.randomGebied = getRandomInt(0, 2);
         this.randomObject = getRandomObject(
           this.allData[this.randomGebied].results.bindings.length
@@ -62,6 +65,7 @@ export class AppComponent {
       this.srcImage = this.loading;
       this.hintClassName = "has-display-block";
       setTimeout(() => {
+        this.hint = true;
         this.randomGebied = getRandomInt(0, 2);
         this.randomObject = getRandomObject(
           this.allData[this.randomGebied].results.bindings.length
