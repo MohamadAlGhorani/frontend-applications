@@ -5,7 +5,7 @@ import { Component, ElementRef, OnInit, Input } from "@angular/core";
   templateUrl: "./image.component.html",
   styleUrls: ["./image.component.scss"],
   template: `
-    <img src="{{ srcName }}" alt="" />
+    <img class="object-image" src="{{ srcName }}" alt="" />
   `
 })
 export class ImageComponent implements OnInit {

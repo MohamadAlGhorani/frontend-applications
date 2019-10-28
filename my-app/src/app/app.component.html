@@ -1,17 +1,21 @@
-<h1>VOLKENKUNDE MUSEUM QUIZ</h1>
+<h1 class="h1">VOLKENKUNDE MUSEUM QUIZ</h1>
 <div class="container">
     <app-thema [thema-var]='thema'></app-thema>
 </div>
 <div class="container">
-    <app-score [score-var]='score'></app-score>
     <app-checkbox (checked)="onChecked($event)" ></app-checkbox>
+</div>
+<div class="container">
+    <app-score [score-var]='score'></app-score>
 </div>
 <div class="container">
     <app-image [src]="srcImage"></app-image>
 </div>
 <div class="container">
      <app-button [hint-var]='hintAantal' (addedClassName)="addingClassName($event)" ></app-button>
-    <app-hint [answerClassName-var]='answerClassName' [hintClassName-var]='hintClassName' [herkomst-var]='herkomst' [title-var]='title'></app-hint>
+</div>
+<div class="container">
+   <app-hint [answerClassName-var]='answerClassName' [hintClassName-var]='hintClassName' [herkomst-var]='herkomst' [title-var]='title'></app-hint>
 </div>
 
 

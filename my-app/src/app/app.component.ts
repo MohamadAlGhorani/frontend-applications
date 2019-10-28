@@ -14,7 +14,7 @@ export class AppComponent {
   url3 = `https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-22/sparql?default-graph-uri=&query=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+dc%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%0D%0APREFIX+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0D%0APREFIX+edm%3A+%3Chttp%3A%2F%2Fwww.europeana.eu%2Fschemas%2Fedm%2F%3E%0D%0APREFIX+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0D%0A%0D%0ASELECT+%3Fobj+%3FobjLabel+%3Flink+%3Ftitle+%3FplaceName++WHERE+%7B%0D%0A++%3Fobj+edm%3AisShownBy+%3Flink+.%0D%0A++%3Fobj+dc%3Atitle+%3Ftitle+.%0D%0A++%3Fobj+edm%3AisRelatedTo+%3Chttps%3A%2F%2Fhdl.handle.net%2F20.500.11840%2Ftermmaster2706%3E+.%0D%0A++%3Chttps%3A%2F%2Fhdl.handle.net%2F20.500.11840%2Ftermmaster2706%3E+skos%3AprefLabel+%3FobjLabel+.%0D%0A++%3Chttps%3A%2F%2Fhdl.handle.net%2F20.500.11840%2Ftermmaster7745%3E+skos%3Abroader*+%3Fplace+.%0D%0A++%3Fplace+skos%3AprefLabel+%3FplaceName+.%0D%0A++%3Fobj+dct%3Aspatial+%3Fplace+.%0D%0A++%0D%0A++FILTER+langMatches%28lang%28%3Ftitle%29%2C+%22ned%22%29%0D%0A%7D+&format=application%2Fsparql-results%2Bjson&timeout=0&debug=on`;
   responseData: object[];
   loading =
-    "https://wpamelia.com/wp-content/uploads/2018/11/ezgif-2-6d0b072c3d3f.gif";
+    "https://cdn.dribbble.com/users/69182/screenshots/2151363/animated_loading__by__amiri.gif";
   srcImage = this.loading;
   herkomst = "";
   hintClassName = "";
