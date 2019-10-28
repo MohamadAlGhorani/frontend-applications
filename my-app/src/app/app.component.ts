@@ -18,6 +18,7 @@ export class AppComponent {
   srcImage = this.loading;
   herkomst = "";
   hintClassName = "";
+  answerClassName = "";
   hintAantal = 10;
   title = "";
   thema = "";
@@ -42,6 +43,7 @@ export class AppComponent {
       this.score = this.score + 1;
       this.srcImage = this.loading;
       this.hintClassName = "has-display-block";
+      this.answerClassName = "has-display-block";
       setTimeout(() => {
         this.hint = true;
         this.randomGebied = getRandomInt(0, 2);
@@ -61,10 +63,12 @@ export class AppComponent {
         ].title.value;
         console.log("title", this.title);
         this.hintClassName = "";
-      }, 1000);
+        this.answerClassName = "";
+      }, 2000);
     } else {
       this.srcImage = this.loading;
       this.hintClassName = "has-display-block";
+      this.answerClassName = "has-display-block";
       setTimeout(() => {
         this.hint = true;
         this.randomGebied = getRandomInt(0, 2);
@@ -85,7 +89,8 @@ export class AppComponent {
         ].title.value;
         console.log("title", this.title);
         this.hintClassName = "";
-      }, 1000);
+        this.answerClassName = "";
+      }, 2000);
     }
   }
 
