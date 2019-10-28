@@ -7,7 +7,7 @@ import { Component, OnInit, Output, EventEmitter } from "@angular/core";
   template: `
     <form action="">
       <input
-        (click)="check('Geografische herkomst')"
+        (click)="check('Afrika')"
         class="keuze"
         type="radio"
         name="keuze"
