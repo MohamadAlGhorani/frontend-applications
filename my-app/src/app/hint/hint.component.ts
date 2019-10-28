@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from "@angular/core";
   templateUrl: "./hint.component.html",
   styleUrls: ["./hint.component.scss"],
   template: `
-    <p class=" hint {{ hintClassName }}">Dit was:{{ title }}</p>
+    <p class=" hint {{ hintClassName }}">Dit was: {{ title }}</p>
     <p class=" answer {{ answerClassName }}">
       En Komt uit: <span>{{ herkomst }} </span>
     </p>
