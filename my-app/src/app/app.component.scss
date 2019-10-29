@@ -1,10 +1,42 @@
-.h1 {
-  color: black;
-  text-align: center;
-  margin: 0;
+.logo-m {
+  width: 150px;
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
+}
+
+.logo {
+  display: none;
 }
 
 .container {
   display: flex;
   justify-content: center;
+  margin-bottom: .5em;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 200px;
+    margin-left: auto;
+    margin-right: 1em;
+    display: block;
+  }
+
+  .logo-m {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    height: auto;
+  }
 }

@@ -1,12 +1,9 @@
-<h1 class="h1">VOLKENKUNDE MUSEUM QUIZ</h1>
+<header><img class="logo-m" src="../assets/images/volkenkunde-logo.png" alt=""><app-thema [thema-var]='thema'></app-thema><img class="logo" src="../assets/images/volkenkunde-logo.png" alt=""></header>
 <div class="container">
-    <app-thema [thema-var]='thema'></app-thema>
+    <app-score [score-var]='score'></app-score>
 </div>
 <div class="container">
     <app-checkbox (checked)="onChecked($event)" ></app-checkbox>
-</div>
-<div class="container">
-    <app-score [score-var]='score'></app-score>
 </div>
 <div class="container">
     <app-image [src]="srcImage"></app-image>
