@@ -3,21 +3,22 @@ input[type=radio] {
 }
 
 input[type=radio]+label {
-  color: #982682;
+  color: #6f3ed9;
   padding: 0.5em;
   padding-top: .3em;
   padding-bottom: .3em;
   height: 1.3em;
-  background-color: #FEDF5C;
+  background-color: #00aadf;
   border-radius: 0.625em;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: 10px;
   margin-right: 10px;
+  transition: all 0.5s;
 }
 
 input[type=radio]:checked+label {
-  background-color: #FEDF5C;
+  background-color: #68dd9b;
   border-radius: 0.625em;
   color: #2b4040;
   padding: 0.5em;
@@ -28,10 +29,11 @@ input[type=radio]:checked+label {
   padding-right: 20px;
   margin-left: 10px;
   margin-right: 10px;
+  transition: all 0.5s;
 }
 
 input[type=radio]:hover+label {
-  background: rgba(239, 192, 48, 0.4);
+  background: #9269eb;
   border-radius: 0.625em;
   color: #2b4040;
   padding: 0.5em;
@@ -42,11 +44,11 @@ input[type=radio]:hover+label {
   padding-right: 20px;
   margin-left: 10px;
   margin-right: 10px;
-
+  transition: all 0.5s;
 }
 
 input[type=radio]:focus+label::before {
-  background: rgba(239, 192, 48, 0.4);
+  background: #9269eb;
   border-radius: 0.625em;
   color: #2b4040;
   padding: 0.5em;
@@ -57,4 +59,5 @@ input[type=radio]:focus+label::before {
   padding-right: 20px;
   margin-left: 10px;
   margin-right: 10px;
+  transition: all 0.5s;
 }
