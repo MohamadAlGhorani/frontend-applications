@@ -17,8 +17,8 @@ input[type=radio]+label {
   transition: all .2s;
 }
 
-input[type=radio]:checked+label {
-  background-color: #68dd9b;
+input[type=radio]:hover+label {
+  background: #9269eb;
   border-radius: 0.625em;
   color: #2b4040;
   padding: 0.5em;
@@ -32,13 +32,13 @@ input[type=radio]:checked+label {
   transition: all .2s;
 }
 
-input[type=radio]:hover+label {
-  background: #9269eb;
+input[type=radio]:checked+label {
+  background-color: #00aadf;
   border-radius: 0.625em;
-  color: #2b4040;
+  color: #6f3ed9;
   padding: 0.5em;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: .3em;
+  padding-bottom: .3em;
   height: 1.3em;
   padding-left: 20px;
   padding-right: 20px;

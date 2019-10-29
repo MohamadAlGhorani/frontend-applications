@@ -74,7 +74,7 @@ export class AppComponent {
     } else {
       this.srcImage = this.loading;
       this.hintClassName = "has-display-block";
-      this.answerClassName = "has-display-block";
+      this.answerClassName = "has-display-block-rong";
       setTimeout(() => {
         this.hint = true;
         this.randomGebied = getRandomInt(0, 2);
