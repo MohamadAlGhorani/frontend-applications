@@ -23,7 +23,7 @@ import { Component, OnInit, Output, EventEmitter } from "@angular/core";
         value="Indonesië"
         id="indonisie"
       />
-      <label for="indonisie">Indonisie</label>
+      <label for="indonisie">Indonesië</label>
       <input
         (click)="check('India')"
         class="keuze"
