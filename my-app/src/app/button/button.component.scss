@@ -1,0 +1,59 @@
+button {
+  color: #6f3ed9;
+  padding: 0.5em;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  height: 2.3em;
+  background-color: #00aadf;
+  border-radius: 0.625em;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all .2s;
+}
+
+.button-active {
+  background-color: #68dd9b;
+  border-radius: 0.625em;
+  color: #2b4040;
+  padding: 0.5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  height: 2.5em;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all .2s;
+}
+
+button:hover {
+  background: #9269eb;
+  border-radius: 0.625em;
+  color: #2b4040;
+  padding: 0.5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  height: 2.5em;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all .2s;
+}
+
+button:focus {
+  background: #9269eb;
+  border-radius: 0.625em;
+  color: #2b4040;
+  padding: 0.5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  height: 2.5em;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all .2s;
+}
