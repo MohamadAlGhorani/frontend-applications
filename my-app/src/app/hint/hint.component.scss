@@ -1,11 +1,21 @@
 .hint {
   display: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 1em;
 }
 
 .answer {
   display: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 1em;
+  background-color: #68dd9b;
 }
 
 .has-display-block {
   display: block;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 1em;
 }
