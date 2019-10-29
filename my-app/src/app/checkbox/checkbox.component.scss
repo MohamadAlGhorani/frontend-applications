@@ -14,7 +14,7 @@ input[type=radio]+label {
   padding-right: 20px;
   margin-left: 10px;
   margin-right: 10px;
-  transition: all 0.5s;
+  transition: all .2s;
 }
 
 input[type=radio]:checked+label {
@@ -22,14 +22,14 @@ input[type=radio]:checked+label {
   border-radius: 0.625em;
   color: #2b4040;
   padding: 0.5em;
-  padding-top: .3em;
-  padding-bottom: .3em;
+  padding-top: .5em;
+  padding-bottom: .5em;
   height: 1.3em;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: 10px;
   margin-right: 10px;
-  transition: all 0.5s;
+  transition: all .2s;
 }
 
 input[type=radio]:hover+label {
@@ -37,14 +37,14 @@ input[type=radio]:hover+label {
   border-radius: 0.625em;
   color: #2b4040;
   padding: 0.5em;
-  padding-top: .3em;
-  padding-bottom: .3em;
+  padding-top: .5em;
+  padding-bottom: .5em;
   height: 1.3em;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: 10px;
   margin-right: 10px;
-  transition: all 0.5s;
+  transition: all .2s;
 }
 
 input[type=radio]:focus+label::before {
@@ -52,12 +52,12 @@ input[type=radio]:focus+label::before {
   border-radius: 0.625em;
   color: #2b4040;
   padding: 0.5em;
-  padding-top: .3em;
-  padding-bottom: .3em;
+  padding-top: .5em;
+  padding-bottom: .5em;
   height: 1.3em;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: 10px;
   margin-right: 10px;
-  transition: all 0.5s;
+  transition: all .2s;
 }
