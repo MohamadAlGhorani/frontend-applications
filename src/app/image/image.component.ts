@@ -2,7 +2,6 @@ import { Component, ElementRef, OnInit, Input } from "@angular/core";
 
 @Component({
   selector: "app-image",
-  templateUrl: "./image.component.html",
   styleUrls: ["./image.component.scss"],
   template: `
     <img class="object-image" src="{{ srcName }}" alt="" />
