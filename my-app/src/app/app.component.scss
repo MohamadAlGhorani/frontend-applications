@@ -19,6 +19,20 @@ header {
   justify-content: center;
   margin-bottom: .5em;
   height: auto;
+  position: relative;
+}
+
+.reset {
+  position: absolute;
+  right: 0;
+  top: 1em;
+}
+
+@media (max-width: 768px) {
+  .score {
+    margin-right: auto;
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 768px) {

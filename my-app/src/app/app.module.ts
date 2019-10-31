@@ -10,6 +10,7 @@ import { HintComponent } from "./hint/hint.component";
 import { ScoreComponent } from "./score/score.component";
 import { HttpClientModule } from "@angular/common/http";
 import { ThemaComponent } from './thema/thema.component';
+import { ResetComponent } from './reset/reset.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ThemaComponent } from './thema/thema.component';
     ButtonComponent,
     HintComponent,
     ScoreComponent,
-    ThemaComponent
+    ThemaComponent,
+    ResetComponent
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],

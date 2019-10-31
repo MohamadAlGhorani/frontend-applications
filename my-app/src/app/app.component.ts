@@ -29,6 +29,35 @@ export class AppComponent {
   allData = [];
   randomObject = "";
   randomGebied = "";
+  reset(value: String) {
+    localStorage.clear();
+    if (localStorage.getItem("userScore") == null) {
+      localStorage.setItem("userScore", "0");
+      this.score = 0;
+    } else {
+      this.score = parseInt(localStorage.getItem("userScore"));
+    }
+    this.hint = true;
+    this.randomGebied = getRandomInt(0, 2);
+    this.randomObject = getRandomObject(
+      this.allData[this.randomGebied].results.bindings.length
+    );
+    console.log(this.randomGebied);
+    this.srcImage = this.allData[this.randomGebied].results.bindings[
+      this.randomObject
+    ].link.value;
+    console.log("srcImage", this.srcImage);
+    this.herkomst = this.allData[this.randomGebied].results.bindings[
+      this.randomObject
+    ].placeName.value;
+    console.log("herkomst", this.herkomst);
+    this.title = this.allData[this.randomGebied].results.bindings[
+      this.randomObject
+    ].title.value;
+    console.log("title", this.title);
+    this.hintClassName = "";
+    this.answerClassName = "";
+  }
   addingClassName(value: String) {
     console.log("adding class name");
     if (this.hintAantal > 1 && this.hint == true) {
