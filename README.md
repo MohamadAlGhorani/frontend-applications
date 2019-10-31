@@ -110,7 +110,7 @@ SELECT ?obj ?objLabel ?link ?title ?placeName  WHERE {
 Thanks to the museum of volkenkunde for sharing their data and hosting us at the museum. And thanks to my teachers and colleagues for their help and sharing their knowledge.
 
 # License
-code is [MIT](http://www.protractortest.org/).
+code is [MIT](https://github.com/MohamadAlGhorani/frontend-applications/blob/master/LICENSE).
 
 # Further help
 
