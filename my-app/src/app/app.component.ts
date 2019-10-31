@@ -22,7 +22,9 @@ export class AppComponent {
   buttonLabel = "Hints";
   title = "";
   thema = "";
-  score = 0;
+  scoreCheck: any;
+  scoreGetal: any;
+  score: any;
   hint = true;
   allData = [];
   randomObject = "";
@@ -46,7 +48,11 @@ export class AppComponent {
   }
   onChecked(value: String) {
     if (value == this.herkomst) {
-      this.score = this.score + 1;
+      this.scoreGetal = parseInt(localStorage.getItem("userScore"));
+      this.scoreCheck = this.scoreGetal + 1;
+      localStorage.setItem("userScore", this.scoreCheck);
+      this.score = parseInt(localStorage.getItem("userScore"));
+
       this.srcImage = this.loading;
       this.hintClassName = "has-display-block";
       this.answerClassName = "has-display-block";
@@ -101,6 +107,12 @@ export class AppComponent {
   }
 
   constructor(private http: HttpClient) {
+    if (localStorage.getItem("userScore") == null) {
+      localStorage.setItem("userScore", 0);
+      this.score = 0;
+    } else {
+      this.score = parseInt(localStorage.getItem("userScore"));
+    }
     this.allData = [];
     this.http.get(this.url1).subscribe(response1 => {
       var responseData1 = response1;
