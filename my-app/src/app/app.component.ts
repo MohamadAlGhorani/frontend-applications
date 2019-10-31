@@ -108,7 +108,7 @@ export class AppComponent {
 
   constructor(private http: HttpClient) {
     if (localStorage.getItem("userScore") == null) {
-      localStorage.setItem("userScore", 0);
+      localStorage.setItem("userScore", "0");
       this.score = 0;
     } else {
       this.score = parseInt(localStorage.getItem("userScore"));
