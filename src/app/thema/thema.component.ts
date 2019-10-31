@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from "@angular/core";
     <p class="thema">
       Thema van de maand: <span>{{ thema }}</span>
     </p>
+    <p class="inleiding">Ra, ra, waar komt dit vandaan?</p>
   `
 })
 export class ThemaComponent implements OnInit {
