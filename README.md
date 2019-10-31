@@ -50,7 +50,7 @@ I used SPARQL in this app to retrieve data from the museum's database. For more 
 Here below you can see the queries that i have wrote to filter in the data to get objects with title, link to image, theme and origin from the museum's dataset.
 
 i used three queries to get objects from three different origin. and i merged them in my script to get one result.
-`
+```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -68,8 +68,7 @@ SELECT ?obj ?objLabel ?link ?title ?placeName  WHERE {
   
   FILTER langMatches(lang(?title), "ned")
 }
-`
-`
+
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -87,8 +86,7 @@ SELECT ?obj ?objLabel ?link ?title ?placeName  WHERE {
   
   FILTER langMatches(lang(?title), "ned")
 } 
-`
-`
+
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -106,7 +104,7 @@ SELECT ?obj ?objLabel ?link ?title ?placeName  WHERE {
   
   FILTER langMatches(lang(?title), "ned")
 } 
-`
+```
   
 ## credits
 Thanks to the museum of volkenkunde for sharing their data and hosting us at the museum. And thanks to my teachers and colleagues for their help and sharing their knowledge.
