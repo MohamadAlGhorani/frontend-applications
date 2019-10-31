@@ -30,6 +30,7 @@ export class AppComponent {
   randomObject = "";
   randomGebied = "";
   reset(value: String) {
+    this.srcImage = this.loading;
     localStorage.clear();
     if (localStorage.getItem("userScore") == null) {
       localStorage.setItem("userScore", "0");
@@ -37,26 +38,28 @@ export class AppComponent {
     } else {
       this.score = parseInt(localStorage.getItem("userScore"));
     }
-    this.hint = true;
-    this.randomGebied = getRandomInt(0, 2);
-    this.randomObject = getRandomObject(
-      this.allData[this.randomGebied].results.bindings.length
-    );
-    console.log(this.randomGebied);
-    this.srcImage = this.allData[this.randomGebied].results.bindings[
-      this.randomObject
-    ].link.value;
-    console.log("srcImage", this.srcImage);
-    this.herkomst = this.allData[this.randomGebied].results.bindings[
-      this.randomObject
-    ].placeName.value;
-    console.log("herkomst", this.herkomst);
-    this.title = this.allData[this.randomGebied].results.bindings[
-      this.randomObject
-    ].title.value;
-    console.log("title", this.title);
-    this.hintClassName = "";
-    this.answerClassName = "";
+    setTimeout(() => {
+      this.hint = true;
+      this.randomGebied = getRandomInt(0, 2);
+      this.randomObject = getRandomObject(
+        this.allData[this.randomGebied].results.bindings.length
+      );
+      console.log(this.randomGebied);
+      this.srcImage = this.allData[this.randomGebied].results.bindings[
+        this.randomObject
+      ].link.value;
+      console.log("srcImage", this.srcImage);
+      this.herkomst = this.allData[this.randomGebied].results.bindings[
+        this.randomObject
+      ].placeName.value;
+      console.log("herkomst", this.herkomst);
+      this.title = this.allData[this.randomGebied].results.bindings[
+        this.randomObject
+      ].title.value;
+      console.log("title", this.title);
+      this.hintClassName = "";
+      this.answerClassName = "";
+    }, 1000);
   }
   addingClassName(value: String) {
     console.log("adding class name");
