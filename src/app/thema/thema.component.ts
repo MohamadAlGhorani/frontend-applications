@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from "@angular/core";
   templateUrl: "./thema.component.html",
   styleUrls: ["./thema.component.scss"],
   template: `
-    <p>
+    <p class="thema">
       Thema van de maand: <span>{{ thema }}</span>
     </p>
   `
