@@ -3,6 +3,9 @@ Dit concept is een leerzaam spel die ik aan de kinderen en volwassenen aanbied. 
 
 ## screenshot
 
+# Build status 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9353f2b9-8e35-43d8-8ea7-cde5d9c9c4d2/deploy-status)](https://app.netlify.com/sites/vibrant-hoover-9ec993/deploys)
+
 # Features
 In mijn app zijn er de volgende features:
 * Random object van de drie benoemde gebieden
