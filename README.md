@@ -2,6 +2,7 @@
 Dit concept is een leerzaam spel die ik aan de kinderen en volwassenen aanbied. Ik ga het data van Indonesië, India en Afrika gebruiken. ik wil de kleding van deze drie gebieden gebruiken om de spel te bouwen. deze spel bestaat uit drie keuzes waarvan de kind een keuze kan maken. Het is een raad spel er wordt op de scherm een foto van de object getoond en de kind mag raden waar het vandaan komt. Het speltje bevat een aantal hints die de kind kan gebruiken om het speltje leuker, makkelijker en leerzaam te maken deze hint is de beschrijving van het object. Als de kind goed heeft geraden krijgt hij/zij een score en de beschrijving van de object. Zodat de kind iets leert. En Wanneer de kind een foute keuze heeft gemaakt krijgt hij/zij de beschrijving van het object en krijgt hij een nieuwe object om te raden.
 
 ## screenshot
+<img width="1280" alt="Screenshot 2019-11-01 at 09 32 00" src="https://user-images.githubusercontent.com/45425087/68012506-8a732880-fc8a-11e9-8743-3ca3ee981f8c.png">
 
 # Build status 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9353f2b9-8e35-43d8-8ea7-cde5d9c9c4d2/deploy-status)](https://app.netlify.com/sites/vibrant-hoover-9ec993/deploys)
